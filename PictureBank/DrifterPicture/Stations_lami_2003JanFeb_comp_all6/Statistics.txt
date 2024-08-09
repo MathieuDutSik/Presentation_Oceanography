@@ -1,0 +1,19 @@
+Beginning=2003-01-01 00:00:00 Ending=2003-02-28 00:00:00
+1/6  station=Ada lon=12.59 lat=45.18
+  LAMI AE=1.84 ME=0.71 Corr=0.95 RMSE=2.46 indx=0.91
+
+2/6  station=Barbara-C lon=13.78 lat=44.08
+  LAMI AE=2.27 ME=0.78 Corr=0.89 RMSE=2.99 indx=0.73
+
+3/6  station=Fratello-C lon=14.17 lat=42.61
+  LAMI AE=1.96 ME=0.71 Corr=0.92 RMSE=2.62 indx=0.80
+
+4/6  station=Giovanna lon=14.46 lat=42.77
+  LAMI AE=2.18 ME=0.52 Corr=0.92 RMSE=2.85 indx=0.80
+
+5/6  station=Pennina lon=14.16 lat=43.02
+  LAMI AE=2.45 ME=0.49 Corr=0.90 RMSE=3.29 indx=0.74
+
+6/6  station=Aqua Alta lon=12.51 lat=45.32
+  LAMI AE=2.16 ME=0.41 Corr=0.94 RMSE=2.90 indx=0.89
+

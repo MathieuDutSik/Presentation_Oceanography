@@ -1,0 +1,29 @@
+Title: Storm surge modelling
+Authors: Mathieu Dutour Sikiric, Aron Roland, Mario Ricchiuto, Maja Bubalo, Mirko Orlic
+Abstract: The shallow water equations are a fundamental partial differential
+equation system that allow to model the free surface and barotropic momentum.
+It is a fundamental component of 2D models which are used in storm surge modelling
+but also of 3D baroclinic models, where it serves as an essential component when
+using the operator splitting method.
+
+Here we implemented an advanced explicit scheme on unstructured mesh that is
+second order, conservative and preserves positivity of the free surface.
+The model is implemented in a parallel way which makes it suitable for application
+in Oceanography but also in rainfall modelling.
+
+We applied the model on a variety of test cases that reflect how the model can be
+used.
+
+Keywords: shallow water equations, circulation, storm surge
+
+Addressed of authors:
+1) Mathieu Dutour Sikiric, Institut Rudjer Boskovic, Bijenicka 54, 10000 Zagreb, Croatia
+   mathieu.dutour@gmail.com
+2) Aron Roland, BGS IT&E GMBH, Pfungstädter Str. 37, 64297 Darmstadt
+   aaronroland@gmx.de
+3) Mario Ricchiuto, INRIA Bordeaux–Sud-Ouest, 200 Avenue de la Vieille Tour, 33405 Talence cedex, France
+   mario.ricchiuto@inria.fr
+4) Maja Bubalo, Geophysics Department, PMF Zagreb, Horvatovac 95, Zagreb, Croatia.
+   Maja.Bubalo@gfz.hr
+5) Mirko Orlic, Geophysics Department, PMF Zagreb, Horvatovac 95, Zagreb, Croatia.
+   mirko.orlic@irb.hr

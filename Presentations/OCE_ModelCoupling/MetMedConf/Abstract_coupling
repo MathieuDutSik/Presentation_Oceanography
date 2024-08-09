@@ -1,0 +1,31 @@
+Title: Coupling of geophysical models
+Authors: Mathieu Dutour Sikiric, Aron Roland, Luigi Cavaleri, Luciana Bertotti, Lucio Torrisi
+Abstract: Surface wave models are typically forced with wind obtained from an atmospheric
+model. The source term functions used in wave models yield as a byproduct the Charnock
+coefficient. This coefficient is key to the parameterization of the roughness of the sea.
+Thus in order to get better wind and wave forecasts one needs to couple wind and wave models.
+
+Similarly, the currents acts on waves by changing how they see the wind. The Stokes
+drift computed from the wave spectra enters into the primitive equations of circulation in
+the ocean. Also wave statistics are used in several parameterizations of ocean models.
+Thus it is quite natural to have the wave model coupled with the circulation model.
+
+We have developped an integrated system containing the Wave model WWM or WAM, circulation
+model ROMS and Atmospheric model COSMO. We designed the Parallel General Model Coupling
+Library (PGMCL) for efficient interfacing of the models. When applied to the Mediterranean
+Sea the coupling yield improved results. For currents, result are less clear of the effect
+of the coupling.
+
+Keywords: Wave model, circulation model, atmospheric model, coupling
+
+Addresses of Authors:
+1) Mathieu Dutour Sikiric, Institut Rudjer Boskovic, Bijenicka 54, 10000 Zagreb, Croatia
+   mathieu.dutour@gmail.com
+2) Aron Roland, BGS IT&E GMBH, Pfungstädter Str. 37, 64297 Darmstadt
+   aaronroland@gmx.de
+3) Luigi Cavaleri, ISMAR-CNR, S.Polo 1364, 30125 Venice, Italy
+   luigi.cavaleri@ismar.cnr.it
+4) Luciana Bertotti, ISMAR-CNR, S.Polo 1364, 30125 Venice, Italy
+   luciana.bertotti@ismar.cnr.it
+5) Lucio Torrisi, CNMCA, National Meteorological Service, Italian Air Force, Rome, Italy
+   lucio.torrisi@aeronautica.difesa.it

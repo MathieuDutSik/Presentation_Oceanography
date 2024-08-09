@@ -1,0 +1,26 @@
+Title: Coupling of Geophysical Models.
+
+Abstract: For essentially historical reasons, the development
+of geophysical models has been done in separate independent
+directions: atmosphere, circulation, waves and others.
+As it happen, the boundary between such domain is especially
+important for correct geophysical modelling. We will explain
+how such coupling can be effectively achieved.
+
+This will cover the technical part of it, i.e. the construction
+of coupling libraries, how they are interfaced and how they
+communicate. We will explain our Parallel Geophysical Model
+Coupling Library (PGMCL) that achieves that. We will also cover
+the parallelization aspects of such coupled models. 
+
+We will first consider the coupling of circulation and wave
+models via the coupling Ardhuin and the simplified Bennis
+formulation of wave coupling. We will show the effect of coupling
+on the circulation models and on the wave models. We will also
+consider the numerical aspects of the coupling.
+
+Finally, we will consider the effect of coupling of waves and
+atmosphere models. Here the all important aspect is the modelling
+of the Chanock coefficient which is the key to the computation
+of the surface stress which is a major unknown in geophysical
+modeling.

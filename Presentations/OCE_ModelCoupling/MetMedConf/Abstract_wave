@@ -1,0 +1,30 @@
+Title: Wave modelling in the Adriatic
+Authors: Mathieu Dutour Sikiric, Damir Ivankovic, Aron Roland, Stjepan Ivatek-Sahdan, Martina Tudor.
+Abstract: The accurate modelling of sea surface gravity waves is essential for accurate
+oceanic forecasting with the wave height being a major concern for navigation and coastal
+activities. It is also very important for oceanic modelling, with the wave input being
+key to the accurate modelling of oceanic surface stress, sediment resuspension, and also
+to oceanic current modelling.
+
+In DHMZ, we have implemented the Wind Wave Model III as an operational model. The wind
+forcing used is based on the numerical weather prediction model ALADIN/HR. The model is 
+configured to dynamically adopt near-surface wind to 2km grid spacing over the 3-day
+forecast range. The boundary condition at the Ottranto strait is obtained from the WAM
+model forecasts computed at ECMWF. The model setup uses an implicit scheme on an
+unstructured grid to make the forecasts.
+
+The forecasts are validated with Altimeter satellite estimates and wave radar measurements.
+
+Keywords: wave model, forecast, altimeter, wave radar
+
+Addresses of authors:
+1) Mathieu Dutour Sikiric, Institut Rudjer Boskovic, Bijenicka 54, 10000 Zagreb, Croatia
+   mathieu.dutour@gmail.com
+2) Damir Ivankovic, Institute of Oceanography and Fisheries, Setaliste Ivana Mestrovica 63, Split, Croatia
+   ivankovic@izor.hr
+3) Aron Roland, BGS IT&E GMBH, Pfungstädter Str. 37, 64297 Darmstadt
+   aaronroland@gmx.de
+4) Stjepan Ivatek-Sahdan, Državni hidrometeorološki zavod,  Grič ulica 3, 10000 Zagreb, Croatia
+   ivateks@cirus.dhz.hr
+5) Martina Tudor, Državni hidrometeorološki zavod,  Grič ulica 3, 10000 Zagreb, Croatia
+   tudor@cirus.dhz.hr

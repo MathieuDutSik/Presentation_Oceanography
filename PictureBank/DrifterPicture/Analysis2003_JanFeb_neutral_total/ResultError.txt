@@ -1,0 +1,652 @@
+iQS=1/141  date=2003-01-01 16:32:28  nbFin=192
+   L1(QS,*): LAMI neu:2.96
+ Mean(QS,*): LAMI neu:-1.04
+ RMSE(QS,*): LAMI neu:3.44
+min=3.67 max=14.16
+iQS=2/141  date=2003-01-01 18:13:28  nbFin=189
+   L1(QS,*): LAMI neu:3.91
+ Mean(QS,*): LAMI neu:-3.60
+ RMSE(QS,*): LAMI neu:4.83
+min=1.62 max=15.24
+iQS=3/141  date=2003-01-02 03:52:46  nbFin=519
+   L1(QS,*): LAMI neu:1.94
+ Mean(QS,*): LAMI neu:-0.65
+ RMSE(QS,*): LAMI neu:2.19
+min=1.35 max=10.53
+iQS=4/141  date=2003-01-02 17:47:27  nbFin=515
+   L1(QS,*): LAMI neu:2.59
+ Mean(QS,*): LAMI neu:-1.99
+ RMSE(QS,*): LAMI neu:3.40
+min=2.88 max=14.13
+iQS=5/141  date=2003-01-03 03:26:45  nbFin=143
+   L1(QS,*): LAMI neu:1.07
+ Mean(QS,*): LAMI neu:-0.59
+ RMSE(QS,*): LAMI neu:1.41
+min=6.6 max=15.27
+iQS=6/141  date=2003-01-03 05:07:45  nbFin=159
+   L1(QS,*): LAMI neu:1.68
+ Mean(QS,*): LAMI neu:0.50
+ RMSE(QS,*): LAMI neu:2.21
+min=1.76 max=6.86
+iQS=7/141  date=2003-01-03 17:21:27  nbFin=483
+   L1(QS,*): LAMI neu:1.66
+ Mean(QS,*): LAMI neu:-0.97
+ RMSE(QS,*): LAMI neu:2.07
+min=1.49 max=9.58
+iQS=8/141  date=2003-01-04 04:41:44  nbFin=527
+   L1(QS,*): LAMI neu:1.91
+ Mean(QS,*): LAMI neu:-0.75
+ RMSE(QS,*): LAMI neu:2.47
+min=2.05 max=14.2
+iQS=9/141  date=2003-01-04 16:55:26  nbFin=513
+   L1(QS,*): LAMI neu:1.65
+ Mean(QS,*): LAMI neu:1.00
+ RMSE(QS,*): LAMI neu:2.18
+min=1.32 max=24.06
+iQS=10/141  date=2003-01-05 04:15:43  nbFin=499
+   L1(QS,*): LAMI neu:3.32
+ Mean(QS,*): LAMI neu:-2.39
+ RMSE(QS,*): LAMI neu:4.39
+min=1.45 max=27.73
+iQS=11/141  date=2003-01-05 16:29:25  nbFin=130
+   L1(QS,*): LAMI neu:2.21
+ Mean(QS,*): LAMI neu:1.18
+ RMSE(QS,*): LAMI neu:2.67
+min=5.24 max=16.66
+iQS=12/141  date=2003-01-05 18:10:25  nbFin=231
+   L1(QS,*): LAMI neu:3.73
+ Mean(QS,*): LAMI neu:3.02
+ RMSE(QS,*): LAMI neu:4.46
+min=5.36 max=12.7
+iQS=13/141  date=2003-01-06 03:49:42  nbFin=533
+   L1(QS,*): LAMI neu:1.59
+ Mean(QS,*): LAMI neu:-0.01
+ RMSE(QS,*): LAMI neu:2.07
+min=2.43 max=15.51
+iQS=14/141  date=2003-01-06 17:44:24  nbFin=526
+   L1(QS,*): LAMI neu:2.12
+ Mean(QS,*): LAMI neu:-1.93
+ RMSE(QS,*): LAMI neu:2.51
+min=5.8 max=16.05
+iQS=15/141  date=2003-01-07 03:23:41  nbFin=55
+   L1(QS,*): LAMI neu:1.99
+ Mean(QS,*): LAMI neu:1.84
+ RMSE(QS,*): LAMI neu:2.37
+min=12.19 max=21.14
+iQS=16/141  date=2003-01-07 05:04:41  nbFin=231
+   L1(QS,*): LAMI neu:5.54
+ Mean(QS,*): LAMI neu:-0.69
+ RMSE(QS,*): LAMI neu:6.85
+min=5.48 max=22.15
+iQS=17/141  date=2003-01-07 17:18:23  nbFin=506
+   L1(QS,*): LAMI neu:2.37
+ Mean(QS,*): LAMI neu:1.42
+ RMSE(QS,*): LAMI neu:2.79
+min=4.68 max=21.54
+iQS=18/141  date=2003-01-08 04:38:40  nbFin=515
+   L1(QS,*): LAMI neu:1.71
+ Mean(QS,*): LAMI neu:-1.17
+ RMSE(QS,*): LAMI neu:2.05
+min=1.95 max=8.48
+iQS=19/141  date=2003-01-08 16:52:22  nbFin=520
+   L1(QS,*): LAMI neu:1.54
+ Mean(QS,*): LAMI neu:-0.35
+ RMSE(QS,*): LAMI neu:1.99
+min=2.6 max=13.65
+iQS=20/141  date=2003-01-09 04:12:39  nbFin=503
+   L1(QS,*): LAMI neu:2.52
+ Mean(QS,*): LAMI neu:1.09
+ RMSE(QS,*): LAMI neu:3.34
+min=4.41 max=20.15
+iQS=21/141  date=2003-01-09 16:26:21  nbFin=57
+   L1(QS,*): LAMI neu:2.99
+ Mean(QS,*): LAMI neu:-2.67
+ RMSE(QS,*): LAMI neu:4.58
+min=10.81 max=29.45
+iQS=22/141  date=2003-01-09 18:07:21  nbFin=267
+   L1(QS,*): LAMI neu:2.53
+ Mean(QS,*): LAMI neu:0.30
+ RMSE(QS,*): LAMI neu:3.15
+min=2.33 max=15.74
+iQS=23/141  date=2003-01-10 03:46:38  nbFin=514
+   L1(QS,*): LAMI neu:2.86
+ Mean(QS,*): LAMI neu:-2.76
+ RMSE(QS,*): LAMI neu:3.52
+min=4.12 max=13.34
+iQS=24/141  date=2003-01-10 17:41:20  nbFin=515
+   L1(QS,*): LAMI neu:1.53
+ Mean(QS,*): LAMI neu:0.13
+ RMSE(QS,*): LAMI neu:1.88
+min=0.12 max=11.73
+iQS=25/141  date=2003-01-11 05:01:37  nbFin=288
+   L1(QS,*): LAMI neu:2.76
+ Mean(QS,*): LAMI neu:0.52
+ RMSE(QS,*): LAMI neu:3.49
+min=6.26 max=19.14
+iQS=26/141  date=2003-01-11 17:15:19  nbFin=509
+   L1(QS,*): LAMI neu:4.34
+ Mean(QS,*): LAMI neu:1.81
+ RMSE(QS,*): LAMI neu:5.24
+min=6.23 max=25.37
+iQS=27/141  date=2003-01-12 04:35:36  nbFin=510
+   L1(QS,*): LAMI neu:4.21
+ Mean(QS,*): LAMI neu:-0.13
+ RMSE(QS,*): LAMI neu:5.06
+min=6.06 max=22.86
+iQS=28/141  date=2003-01-12 16:49:18  nbFin=471
+   L1(QS,*): LAMI neu:3.26
+ Mean(QS,*): LAMI neu:-1.25
+ RMSE(QS,*): LAMI neu:3.88
+min=3.99 max=17.82
+iQS=29/141  date=2003-01-13 04:09:35  nbFin=507
+   L1(QS,*): LAMI neu:2.57
+ Mean(QS,*): LAMI neu:-0.92
+ RMSE(QS,*): LAMI neu:3.13
+min=2.65 max=13.5
+iQS=31/141  date=2003-01-13 18:04:16  nbFin=309
+   L1(QS,*): LAMI neu:2.18
+ Mean(QS,*): LAMI neu:-2.05
+ RMSE(QS,*): LAMI neu:2.45
+min=3.1 max=12.25
+iQS=32/141  date=2003-01-14 03:43:34  nbFin=494
+   L1(QS,*): LAMI neu:0.90
+ Mean(QS,*): LAMI neu:-0.02
+ RMSE(QS,*): LAMI neu:1.23
+min=1.58 max=12.89
+iQS=33/141  date=2003-01-14 17:38:15  nbFin=488
+   L1(QS,*): LAMI neu:1.55
+ Mean(QS,*): LAMI neu:-0.49
+ RMSE(QS,*): LAMI neu:1.99
+min=1.16 max=12.58
+iQS=34/141  date=2003-01-15 04:58:33  nbFin=344
+   L1(QS,*): LAMI neu:2.05
+ Mean(QS,*): LAMI neu:-1.82
+ RMSE(QS,*): LAMI neu:2.59
+min=1.25 max=8.97
+iQS=35/141  date=2003-01-15 17:12:14  nbFin=433
+   L1(QS,*): LAMI neu:1.26
+ Mean(QS,*): LAMI neu:0.14
+ RMSE(QS,*): LAMI neu:1.56
+min=0.15 max=7.8
+iQS=36/141  date=2003-01-16 04:32:32  nbFin=458
+   L1(QS,*): LAMI neu:1.53
+ Mean(QS,*): LAMI neu:-0.22
+ RMSE(QS,*): LAMI neu:1.94
+min=0 max=11.96
+iQS=37/141  date=2003-01-16 16:46:13  nbFin=432
+   L1(QS,*): LAMI neu:1.63
+ Mean(QS,*): LAMI neu:-1.25
+ RMSE(QS,*): LAMI neu:2.06
+min=0.9 max=10.09
+iQS=39/141  date=2003-01-17 04:06:30  nbFin=506
+   L1(QS,*): LAMI neu:1.84
+ Mean(QS,*): LAMI neu:-0.35
+ RMSE(QS,*): LAMI neu:2.33
+min=1.38 max=11.26
+iQS=41/141  date=2003-01-17 18:01:12  nbFin=364
+   L1(QS,*): LAMI neu:2.26
+ Mean(QS,*): LAMI neu:1.54
+ RMSE(QS,*): LAMI neu:2.70
+min=1.63 max=7.85
+iQS=42/141  date=2003-01-18 03:40:29  nbFin=495
+   L1(QS,*): LAMI neu:2.09
+ Mean(QS,*): LAMI neu:0.84
+ RMSE(QS,*): LAMI neu:2.65
+min=2.84 max=16.37
+iQS=43/141  date=2003-01-18 17:35:11  nbFin=515
+   L1(QS,*): LAMI neu:3.27
+ Mean(QS,*): LAMI neu:-1.58
+ RMSE(QS,*): LAMI neu:4.30
+min=2.75 max=28.01
+iQS=44/141  date=2003-01-19 04:55:28  nbFin=424
+   L1(QS,*): LAMI neu:1.96
+ Mean(QS,*): LAMI neu:-1.27
+ RMSE(QS,*): LAMI neu:2.50
+min=1.96 max=14.86
+iQS=45/141  date=2003-01-19 17:09:09  nbFin=518
+   L1(QS,*): LAMI neu:2.74
+ Mean(QS,*): LAMI neu:-2.48
+ RMSE(QS,*): LAMI neu:3.09
+min=3.81 max=12.77
+iQS=46/141  date=2003-01-20 04:29:27  nbFin=508
+   L1(QS,*): LAMI neu:1.93
+ Mean(QS,*): LAMI neu:-1.64
+ RMSE(QS,*): LAMI neu:2.29
+min=2.05 max=12.36
+iQS=47/141  date=2003-01-20 16:43:08  nbFin=360
+   L1(QS,*): LAMI neu:2.09
+ Mean(QS,*): LAMI neu:-2.06
+ RMSE(QS,*): LAMI neu:2.31
+min=1.14 max=6.58
+iQS=48/141  date=2003-01-20 18:24:08  nbFin=46
+   L1(QS,*): LAMI neu:0.89
+ Mean(QS,*): LAMI neu:-0.72
+ RMSE(QS,*): LAMI neu:1.31
+min=0.66 max=5.44
+iQS=49/141  date=2003-01-21 04:03:25  nbFin=499
+   L1(QS,*): LAMI neu:1.52
+ Mean(QS,*): LAMI neu:-0.90
+ RMSE(QS,*): LAMI neu:1.90
+min=1.57 max=9.88
+iQS=50/141  date=2003-01-21 17:58:07  nbFin=425
+   L1(QS,*): LAMI neu:2.30
+ Mean(QS,*): LAMI neu:-1.27
+ RMSE(QS,*): LAMI neu:2.75
+min=5.64 max=15.81
+iQS=51/141  date=2003-01-22 03:37:24  nbFin=454
+   L1(QS,*): LAMI neu:2.36
+ Mean(QS,*): LAMI neu:1.98
+ RMSE(QS,*): LAMI neu:2.71
+min=4.15 max=23.11
+iQS=53/141  date=2003-01-22 17:32:05  nbFin=476
+   L1(QS,*): LAMI neu:3.16
+ Mean(QS,*): LAMI neu:2.70
+ RMSE(QS,*): LAMI neu:3.76
+min=1.34 max=11.38
+iQS=54/141  date=2003-01-23 04:52:23  nbFin=495
+   L1(QS,*): LAMI neu:1.73
+ Mean(QS,*): LAMI neu:-0.99
+ RMSE(QS,*): LAMI neu:2.10
+min=1.46 max=12
+iQS=55/141  date=2003-01-23 17:06:04  nbFin=514
+   L1(QS,*): LAMI neu:2.37
+ Mean(QS,*): LAMI neu:-1.84
+ RMSE(QS,*): LAMI neu:3.30
+min=1.48 max=22.23
+iQS=56/141  date=2003-01-24 04:26:21  nbFin=500
+   L1(QS,*): LAMI neu:2.85
+ Mean(QS,*): LAMI neu:2.02
+ RMSE(QS,*): LAMI neu:3.48
+min=3.25 max=20.66
+iQS=57/141  date=2003-01-24 16:40:03  nbFin=308
+   L1(QS,*): LAMI neu:2.94
+ Mean(QS,*): LAMI neu:2.85
+ RMSE(QS,*): LAMI neu:3.36
+min=7.01 max=16.56
+iQS=58/141  date=2003-01-24 18:21:03  nbFin=78
+   L1(QS,*): LAMI neu:3.56
+ Mean(QS,*): LAMI neu:3.51
+ RMSE(QS,*): LAMI neu:3.91
+min=6.73 max=16
+iQS=59/141  date=2003-01-25 04:00:20  nbFin=521
+   L1(QS,*): LAMI neu:2.71
+ Mean(QS,*): LAMI neu:1.98
+ RMSE(QS,*): LAMI neu:3.28
+min=6.49 max=23.2
+iQS=60/141  date=2003-01-25 17:55:02  nbFin=483
+   L1(QS,*): LAMI neu:3.16
+ Mean(QS,*): LAMI neu:2.74
+ RMSE(QS,*): LAMI neu:3.90
+min=5.26 max=18.1
+iQS=61/141  date=2003-01-26 03:34:19  nbFin=324
+   L1(QS,*): LAMI neu:2.30
+ Mean(QS,*): LAMI neu:1.71
+ RMSE(QS,*): LAMI neu:2.72
+min=3.85 max=17.24
+iQS=63/141  date=2003-01-26 17:29:00  nbFin=504
+   L1(QS,*): LAMI neu:2.99
+ Mean(QS,*): LAMI neu:0.38
+ RMSE(QS,*): LAMI neu:3.73
+min=1.83 max=18.13
+iQS=64/141  date=2003-01-27 04:49:17  nbFin=527
+   L1(QS,*): LAMI neu:2.67
+ Mean(QS,*): LAMI neu:-0.27
+ RMSE(QS,*): LAMI neu:3.26
+min=4.32 max=19.44
+iQS=65/141  date=2003-01-27 17:02:59  nbFin=529
+   L1(QS,*): LAMI neu:2.62
+ Mean(QS,*): LAMI neu:-1.06
+ RMSE(QS,*): LAMI neu:3.13
+min=2.62 max=20.29
+iQS=66/141  date=2003-01-28 04:23:16  nbFin=493
+   L1(QS,*): LAMI neu:1.75
+ Mean(QS,*): LAMI neu:-1.29
+ RMSE(QS,*): LAMI neu:2.26
+min=0.66 max=18.01
+iQS=67/141  date=2003-01-28 16:36:58  nbFin=247
+   L1(QS,*): LAMI neu:1.39
+ Mean(QS,*): LAMI neu:-1.22
+ RMSE(QS,*): LAMI neu:1.67
+min=1.36 max=7.26
+iQS=68/141  date=2003-01-28 18:17:57  nbFin=107
+   L1(QS,*): LAMI neu:2.50
+ Mean(QS,*): LAMI neu:-2.50
+ RMSE(QS,*): LAMI neu:2.71
+min=2.36 max=7
+iQS=69/141  date=2003-01-29 03:57:15  nbFin=521
+   L1(QS,*): LAMI neu:2.91
+ Mean(QS,*): LAMI neu:-1.16
+ RMSE(QS,*): LAMI neu:3.97
+min=2.08 max=17.91
+iQS=70/141  date=2003-01-29 17:51:56  nbFin=507
+   L1(QS,*): LAMI neu:3.92
+ Mean(QS,*): LAMI neu:-3.37
+ RMSE(QS,*): LAMI neu:5.25
+min=1.95 max=21.89
+iQS=71/141  date=2003-01-30 03:31:13  nbFin=237
+   L1(QS,*): LAMI neu:1.83
+ Mean(QS,*): LAMI neu:-0.31
+ RMSE(QS,*): LAMI neu:2.43
+min=3.67 max=13.72
+iQS=72/141  date=2003-01-30 05:12:13  nbFin=56
+   L1(QS,*): LAMI neu:1.20
+ Mean(QS,*): LAMI neu:-0.34
+ RMSE(QS,*): LAMI neu:1.43
+min=2.05 max=5.75
+iQS=73/141  date=2003-01-30 17:25:55  nbFin=493
+   L1(QS,*): LAMI neu:2.42
+ Mean(QS,*): LAMI neu:-1.74
+ RMSE(QS,*): LAMI neu:3.19
+min=2.02 max=17.51
+iQS=74/141  date=2003-01-31 04:46:12  nbFin=531
+   L1(QS,*): LAMI neu:2.45
+ Mean(QS,*): LAMI neu:-0.79
+ RMSE(QS,*): LAMI neu:3.04
+min=3.45 max=14.99
+iQS=75/141  date=2003-01-31 16:59:53  nbFin=521
+   L1(QS,*): LAMI neu:2.41
+ Mean(QS,*): LAMI neu:-0.43
+ RMSE(QS,*): LAMI neu:3.04
+min=2.22 max=14.65
+iQS=76/141  date=2003-02-01 04:20:10  nbFin=501
+   L1(QS,*): LAMI neu:3.60
+ Mean(QS,*): LAMI neu:-1.29
+ RMSE(QS,*): LAMI neu:4.92
+min=4.03 max=31.52
+iQS=77/141  date=2003-02-01 16:33:52  nbFin=215
+   L1(QS,*): LAMI neu:3.29
+ Mean(QS,*): LAMI neu:3.19
+ RMSE(QS,*): LAMI neu:3.69
+min=6.59 max=17.26
+iQS=78/141  date=2003-02-01 18:14:52  nbFin=163
+   L1(QS,*): LAMI neu:2.89
+ Mean(QS,*): LAMI neu:0.29
+ RMSE(QS,*): LAMI neu:3.59
+min=7.62 max=17.88
+iQS=79/141  date=2003-02-02 03:54:09  nbFin=526
+   L1(QS,*): LAMI neu:2.84
+ Mean(QS,*): LAMI neu:0.29
+ RMSE(QS,*): LAMI neu:3.39
+min=4.76 max=16.73
+iQS=80/141  date=2003-02-02 17:48:50  nbFin=500
+   L1(QS,*): LAMI neu:1.97
+ Mean(QS,*): LAMI neu:-0.44
+ RMSE(QS,*): LAMI neu:2.50
+min=3.54 max=14.93
+iQS=81/141  date=2003-02-03 03:28:08  nbFin=168
+   L1(QS,*): LAMI neu:1.99
+ Mean(QS,*): LAMI neu:-1.05
+ RMSE(QS,*): LAMI neu:2.63
+min=4.44 max=16.75
+iQS=82/141  date=2003-02-03 05:09:07  nbFin=114
+   L1(QS,*): LAMI neu:1.40
+ Mean(QS,*): LAMI neu:-0.39
+ RMSE(QS,*): LAMI neu:1.77
+min=1.16 max=11.4
+iQS=83/141  date=2003-02-03 17:22:49  nbFin=489
+   L1(QS,*): LAMI neu:1.32
+ Mean(QS,*): LAMI neu:-0.77
+ RMSE(QS,*): LAMI neu:1.69
+min=1.52 max=11.13
+iQS=84/141  date=2003-02-04 04:43:06  nbFin=524
+   L1(QS,*): LAMI neu:2.13
+ Mean(QS,*): LAMI neu:-0.74
+ RMSE(QS,*): LAMI neu:2.77
+min=4.87 max=16.31
+iQS=85/141  date=2003-02-04 16:56:47  nbFin=519
+   L1(QS,*): LAMI neu:1.84
+ Mean(QS,*): LAMI neu:0.25
+ RMSE(QS,*): LAMI neu:2.33
+min=5.73 max=20.98
+iQS=86/141  date=2003-02-05 04:17:05  nbFin=502
+   L1(QS,*): LAMI neu:4.23
+ Mean(QS,*): LAMI neu:-1.52
+ RMSE(QS,*): LAMI neu:5.43
+min=5.99 max=24.98
+iQS=87/141  date=2003-02-05 16:30:46  nbFin=159
+   L1(QS,*): LAMI neu:5.12
+ Mean(QS,*): LAMI neu:-4.47
+ RMSE(QS,*): LAMI neu:5.67
+min=7.79 max=19.23
+iQS=88/141  date=2003-02-05 18:11:46  nbFin=214
+   L1(QS,*): LAMI neu:4.24
+ Mean(QS,*): LAMI neu:2.73
+ RMSE(QS,*): LAMI neu:4.90
+min=2.37 max=19.06
+iQS=89/141  date=2003-02-06 03:51:03  nbFin=528
+   L1(QS,*): LAMI neu:2.75
+ Mean(QS,*): LAMI neu:0.30
+ RMSE(QS,*): LAMI neu:3.47
+min=3 max=13.83
+iQS=90/141  date=2003-02-06 17:45:44  nbFin=516
+   L1(QS,*): LAMI neu:3.04
+ Mean(QS,*): LAMI neu:2.46
+ RMSE(QS,*): LAMI neu:3.52
+min=2.78 max=18.45
+iQS=91/141  date=2003-02-07 03:25:02  nbFin=92
+   L1(QS,*): LAMI neu:1.20
+ Mean(QS,*): LAMI neu:0.88
+ RMSE(QS,*): LAMI neu:1.51
+min=8.05 max=14.81
+iQS=92/141  date=2003-02-07 05:06:01  nbFin=199
+   L1(QS,*): LAMI neu:3.17
+ Mean(QS,*): LAMI neu:-0.01
+ RMSE(QS,*): LAMI neu:3.72
+min=1.45 max=13.23
+iQS=93/141  date=2003-02-07 17:19:43  nbFin=500
+   L1(QS,*): LAMI neu:1.77
+ Mean(QS,*): LAMI neu:-0.09
+ RMSE(QS,*): LAMI neu:2.20
+min=0.57 max=18.48
+iQS=94/141  date=2003-02-08 04:40:00  nbFin=511
+   L1(QS,*): LAMI neu:1.30
+ Mean(QS,*): LAMI neu:-0.15
+ RMSE(QS,*): LAMI neu:1.56
+min=1.33 max=13.03
+iQS=95/141  date=2003-02-08 16:53:41  nbFin=512
+   L1(QS,*): LAMI neu:1.31
+ Mean(QS,*): LAMI neu:-1.19
+ RMSE(QS,*): LAMI neu:1.64
+min=0.46 max=18.56
+iQS=96/141  date=2003-02-09 04:13:58  nbFin=501
+   L1(QS,*): LAMI neu:1.84
+ Mean(QS,*): LAMI neu:1.08
+ RMSE(QS,*): LAMI neu:2.31
+min=3.55 max=12.3
+iQS=97/141  date=2003-02-09 16:27:40  nbFin=85
+   L1(QS,*): LAMI neu:2.19
+ Mean(QS,*): LAMI neu:2.18
+ RMSE(QS,*): LAMI neu:2.57
+min=1.26 max=4.39
+iQS=98/141  date=2003-02-09 18:08:40  nbFin=256
+   L1(QS,*): LAMI neu:1.58
+ Mean(QS,*): LAMI neu:0.62
+ RMSE(QS,*): LAMI neu:2.15
+min=1.19 max=13.48
+iQS=99/141  date=2003-02-10 03:47:57  nbFin=528
+   L1(QS,*): LAMI neu:1.49
+ Mean(QS,*): LAMI neu:-0.56
+ RMSE(QS,*): LAMI neu:1.86
+min=3.09 max=14.93
+iQS=100/141  date=2003-02-10 17:42:38  nbFin=516
+   L1(QS,*): LAMI neu:2.53
+ Mean(QS,*): LAMI neu:-0.31
+ RMSE(QS,*): LAMI neu:3.21
+min=0.92 max=12.95
+iQS=102/141  date=2003-02-11 05:02:55  nbFin=266
+   L1(QS,*): LAMI neu:2.49
+ Mean(QS,*): LAMI neu:-0.57
+ RMSE(QS,*): LAMI neu:3.05
+min=3.46 max=13.41
+iQS=103/141  date=2003-02-11 17:16:36  nbFin=507
+   L1(QS,*): LAMI neu:2.25
+ Mean(QS,*): LAMI neu:-0.12
+ RMSE(QS,*): LAMI neu:2.91
+min=2.46 max=17.07
+iQS=104/141  date=2003-02-12 04:36:54  nbFin=527
+   L1(QS,*): LAMI neu:2.37
+ Mean(QS,*): LAMI neu:0.94
+ RMSE(QS,*): LAMI neu:2.98
+min=3.24 max=16.79
+iQS=105/141  date=2003-02-12 16:50:35  nbFin=498
+   L1(QS,*): LAMI neu:3.11
+ Mean(QS,*): LAMI neu:2.04
+ RMSE(QS,*): LAMI neu:3.69
+min=3.23 max=17.59
+iQS=106/141  date=2003-02-13 04:10:52  nbFin=506
+   L1(QS,*): LAMI neu:2.42
+ Mean(QS,*): LAMI neu:1.03
+ RMSE(QS,*): LAMI neu:3.01
+min=3.06 max=16.17
+iQS=108/141  date=2003-02-13 18:05:33  nbFin=286
+   L1(QS,*): LAMI neu:3.06
+ Mean(QS,*): LAMI neu:-1.26
+ RMSE(QS,*): LAMI neu:3.59
+min=1.96 max=14.4
+iQS=109/141  date=2003-02-14 03:44:50  nbFin=503
+   L1(QS,*): LAMI neu:1.76
+ Mean(QS,*): LAMI neu:-0.05
+ RMSE(QS,*): LAMI neu:2.17
+min=3.09 max=14.12
+iQS=110/141  date=2003-02-14 17:39:31  nbFin=515
+   L1(QS,*): LAMI neu:2.40
+ Mean(QS,*): LAMI neu:-0.47
+ RMSE(QS,*): LAMI neu:3.00
+min=1.6 max=10.06
+iQS=111/141  date=2003-02-15 04:59:49  nbFin=328
+   L1(QS,*): LAMI neu:3.02
+ Mean(QS,*): LAMI neu:-2.31
+ RMSE(QS,*): LAMI neu:3.46
+min=0.58 max=10.93
+iQS=112/141  date=2003-02-15 17:13:30  nbFin=498
+   L1(QS,*): LAMI neu:2.09
+ Mean(QS,*): LAMI neu:-0.81
+ RMSE(QS,*): LAMI neu:2.63
+min=1.95 max=13.23
+iQS=113/141  date=2003-02-16 04:33:47  nbFin=516
+   L1(QS,*): LAMI neu:1.83
+ Mean(QS,*): LAMI neu:0.04
+ RMSE(QS,*): LAMI neu:2.29
+min=2.8 max=15.33
+iQS=114/141  date=2003-02-16 16:47:28  nbFin=451
+   L1(QS,*): LAMI neu:2.62
+ Mean(QS,*): LAMI neu:1.57
+ RMSE(QS,*): LAMI neu:3.25
+min=1.79 max=14.08
+iQS=115/141  date=2003-02-17 04:07:45  nbFin=506
+   L1(QS,*): LAMI neu:2.19
+ Mean(QS,*): LAMI neu:0.82
+ RMSE(QS,*): LAMI neu:2.73
+min=5.26 max=16.64
+iQS=117/141  date=2003-02-17 18:02:26  nbFin=343
+   L1(QS,*): LAMI neu:4.07
+ Mean(QS,*): LAMI neu:-0.54
+ RMSE(QS,*): LAMI neu:4.62
+min=4.89 max=19.22
+iQS=118/141  date=2003-02-18 03:41:43  nbFin=498
+   L1(QS,*): LAMI neu:2.48
+ Mean(QS,*): LAMI neu:1.32
+ RMSE(QS,*): LAMI neu:3.03
+min=3.2 max=17.31
+iQS=119/141  date=2003-02-18 17:36:25  nbFin=512
+   L1(QS,*): LAMI neu:2.78
+ Mean(QS,*): LAMI neu:-0.68
+ RMSE(QS,*): LAMI neu:3.56
+min=2.41 max=18.03
+iQS=120/141  date=2003-02-19 04:56:42  nbFin=401
+   L1(QS,*): LAMI neu:2.74
+ Mean(QS,*): LAMI neu:-1.01
+ RMSE(QS,*): LAMI neu:3.41
+min=3.42 max=14.48
+iQS=121/141  date=2003-02-19 17:10:23  nbFin=519
+   L1(QS,*): LAMI neu:2.32
+ Mean(QS,*): LAMI neu:-0.46
+ RMSE(QS,*): LAMI neu:2.85
+min=2.29 max=15.62
+iQS=122/141  date=2003-02-20 04:30:40  nbFin=514
+   L1(QS,*): LAMI neu:1.75
+ Mean(QS,*): LAMI neu:-0.38
+ RMSE(QS,*): LAMI neu:2.14
+min=1.52 max=13.53
+iQS=123/141  date=2003-02-20 16:44:21  nbFin=399
+   L1(QS,*): LAMI neu:2.64
+ Mean(QS,*): LAMI neu:-1.74
+ RMSE(QS,*): LAMI neu:3.04
+min=2.65 max=9.99
+iQS=125/141  date=2003-02-21 04:04:38  nbFin=511
+   L1(QS,*): LAMI neu:1.84
+ Mean(QS,*): LAMI neu:-0.23
+ RMSE(QS,*): LAMI neu:2.35
+min=3.21 max=12.02
+iQS=126/141  date=2003-02-21 17:59:19  nbFin=395
+   L1(QS,*): LAMI neu:2.40
+ Mean(QS,*): LAMI neu:0.06
+ RMSE(QS,*): LAMI neu:2.96
+min=1.05 max=11.18
+iQS=127/141  date=2003-02-22 03:38:36  nbFin=479
+   L1(QS,*): LAMI neu:1.80
+ Mean(QS,*): LAMI neu:0.68
+ RMSE(QS,*): LAMI neu:2.21
+min=2.28 max=15.55
+iQS=129/141  date=2003-02-22 17:33:17  nbFin=506
+   L1(QS,*): LAMI neu:2.04
+ Mean(QS,*): LAMI neu:-0.60
+ RMSE(QS,*): LAMI neu:2.65
+min=1.73 max=13.5
+iQS=130/141  date=2003-02-23 04:53:34  nbFin=482
+   L1(QS,*): LAMI neu:1.58
+ Mean(QS,*): LAMI neu:0.69
+ RMSE(QS,*): LAMI neu:1.91
+min=1.83 max=10.97
+iQS=131/141  date=2003-02-23 17:07:16  nbFin=512
+   L1(QS,*): LAMI neu:2.11
+ Mean(QS,*): LAMI neu:-0.28
+ RMSE(QS,*): LAMI neu:2.59
+min=1.38 max=12.07
+iQS=132/141  date=2003-02-24 04:27:33  nbFin=504
+   L1(QS,*): LAMI neu:2.06
+ Mean(QS,*): LAMI neu:-1.42
+ RMSE(QS,*): LAMI neu:2.45
+min=3.1 max=11.04
+iQS=133/141  date=2003-02-24 16:41:14  nbFin=328
+   L1(QS,*): LAMI neu:3.97
+ Mean(QS,*): LAMI neu:-3.32
+ RMSE(QS,*): LAMI neu:4.45
+min=4.84 max=15.44
+iQS=134/141  date=2003-02-24 18:22:14  nbFin=65
+   L1(QS,*): LAMI neu:1.96
+ Mean(QS,*): LAMI neu:-1.54
+ RMSE(QS,*): LAMI neu:2.54
+min=1.16 max=9.94
+iQS=135/141  date=2003-02-25 04:01:31  nbFin=514
+   L1(QS,*): LAMI neu:2.11
+ Mean(QS,*): LAMI neu:-0.37
+ RMSE(QS,*): LAMI neu:2.62
+min=1.46 max=14.45
+iQS=136/141  date=2003-02-25 17:56:12  nbFin=436
+   L1(QS,*): LAMI neu:1.64
+ Mean(QS,*): LAMI neu:1.53
+ RMSE(QS,*): LAMI neu:2.09
+min=0.65 max=6.23
+iQS=137/141  date=2003-02-26 03:35:29  nbFin=344
+   L1(QS,*): LAMI neu:1.44
+ Mean(QS,*): LAMI neu:0.36
+ RMSE(QS,*): LAMI neu:1.88
+min=0.92 max=8.89
+iQS=139/141  date=2003-02-26 17:30:10  nbFin=458
+   L1(QS,*): LAMI neu:0.76
+ Mean(QS,*): LAMI neu:-0.12
+ RMSE(QS,*): LAMI neu:1.02
+min=0.98 max=9.04
+iQS=140/141  date=2003-02-27 04:50:27  nbFin=530
+   L1(QS,*): LAMI neu:1.21
+ Mean(QS,*): LAMI neu:0.69
+ RMSE(QS,*): LAMI neu:1.47
+min=0.44 max=9.16
+iQS=141/141  date=2003-02-27 17:04:08  nbFin=493
+   L1(QS,*): LAMI neu:0.96
+ Mean(QS,*): LAMI neu:-0.24
+ RMSE(QS,*): LAMI neu:1.26
+min=0.62 max=9.13
+Model & Mean absolute error & Mean error & RMSE\\
+LAMI neu & 2.3267 & -0.24614 & 3.0383\\

@@ -1,0 +1,20 @@
+IDEAL: Complex correlation: amp=1 theta=0 trans=1
+Beginning=2003-01-01 00:00:00 Ending=2003-02-28 00:00:00
+1/6  station=Ada lon=12.59 lat=45.18
+  LAMI amp=0.59 theta=-64.19 trans=0.57
+
+2/6  station=Barbara-C lon=13.78 lat=44.08
+  LAMI amp=0.34 theta=11.88 trans=0.30
+
+3/6  station=Fratello-C lon=14.17 lat=42.61
+  LAMI amp=0.34 theta=112.63 trans=0.26
+
+4/6  station=Giovanna lon=14.46 lat=42.77
+  LAMI amp=0.16 theta=8.22 trans=0.14
+
+5/6  station=Pennina lon=14.16 lat=43.02
+  LAMI amp=0.15 theta=79.19 trans=0.12
+
+6/6  station=Aqua Alta lon=12.51 lat=45.32
+  LAMI amp=0.60 theta=-38.69 trans=0.63
+

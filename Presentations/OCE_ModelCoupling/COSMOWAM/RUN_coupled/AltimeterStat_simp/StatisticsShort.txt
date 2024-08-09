@@ -1,0 +1,37 @@
+Beginning time = 2010-11-01 00:00:00
+Ending    time = 2010-12-31 00:00:00
+Satellite = ERS2 TrackDistKM=6.60724
+Satellite = ENVISAT TrackDistKM=7.52838
+Satellite = JASON1 TrackDistKM=5.88505
+Satellite = JASON2 TrackDistKM=5.88721
+Satellite = CRYOSAT TrackDistKM=6.40218
+ERS2 wind statistics
+ME    AE    RMSE CRMSE  CORR   SCI   CSCI
+0.44 1.87 2.47 2.43 0.76 0.37 0.36
+ENVISAT wind statistics
+ME    AE    RMSE CRMSE  CORR   SCI   CSCI
+0.08 1.78 2.34 2.34 0.79 0.28 0.28
+JASON1 wind statistics
+ME    AE    RMSE CRMSE  CORR   SCI   CSCI
+0.13 1.83 2.43 2.43 0.78 0.31 0.31
+JASON2 wind statistics
+ME    AE    RMSE CRMSE  CORR   SCI   CSCI
+0.04 1.70 2.23 2.23 0.79 0.30 0.30
+CRYOSAT wind statistics
+ME    AE    RMSE CRMSE  CORR   SCI   CSCI
+-nan -nan -nan -nan -nan -nan -nan
+ERS2 wave statistics
+ME    AE    RMSE CRMSE  CORR   SCI   CSCI
+0.02 0.40 0.54 0.54 0.83 0.39 0.39
+ENVISAT wave statistics
+ME    AE    RMSE CRMSE  CORR   SCI   CSCI
+0.10 0.39 0.55 0.55 0.87 0.33 0.33
+JASON1 wave statistics
+ME    AE    RMSE CRMSE  CORR   SCI   CSCI
+0.06 0.38 0.53 0.53 0.88 0.34 0.34
+JASON2 wave statistics
+ME    AE    RMSE CRMSE  CORR   SCI   CSCI
+-0.00 0.35 0.48 0.48 0.88 0.32 0.32
+CRYOSAT wave statistics
+ME    AE    RMSE CRMSE  CORR   SCI   CSCI
+-0.12 0.37 0.50 0.48 0.89 0.31 0.31

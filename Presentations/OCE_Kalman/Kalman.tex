@@ -1,0 +1,464 @@
+\documentclass[%
+pdf,
+%nocolorBG,
+colorBG,
+slideColor,
+%slideBW,
+%draft,
+%frames
+%azure
+%contemporain
+%nuancegris
+%troispoints
+%lignesbleues
+%darkblue
+%alienglow
+%autumn
+]{prosper}
+\usepackage{pifont, amsmath, multicol}
+%\usepackage{floatflt, wrapfig,subfigure}
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{pifont}
+%\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+%\catcode`\«=\active
+%\catcode`\»=\active
+%\def«{\og\ignorespaces}%
+%\def»{{\fg}}%
+\newcommand{\spacer}{\rule[-3mm]{0mm}{8mm}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{proposition}[theorem]{Proposition}
+
+
+\newcommand{\RR}{\ensuremath{\mathbb{R}}}
+\newcommand{\NN}{\ensuremath{\mathbb{N}}}
+\newcommand{\QQ}{\ensuremath{\mathbb{Q}}}
+\newcommand{\CC}{\ensuremath{\mathbb{C}}}
+\newcommand{\ZZ}{\ensuremath{\mathbb{Z}}}
+\newcommand{\TT}{\ensuremath{\mathbb{T}}}
+
+
+
+\title{{\Huge \textcolor{blue}{Kalman filtering}\\
+\textcolor{blue}{in}\\[5mm]
+\textcolor{blue}{oceanography}}}
+\author{
+\textcolor{red}{\Large Mathieu Dutour Sikiri\'c}\\[2mm]
+\textcolor{red}{\Large (based on Hoteit Ibrahim thesis)}\\[2mm]
+%\textcolor{red}{\large ENS/CNRS, Paris and Hebrew University, Jerusalem}\\[2mm]
+}
+\slideCaption{}
+
+\date{}
+
+
+
+\begin{document}
+\maketitle
+
+
+\begin{slide}{Problem}
+
+\begin{itemize}
+\item An evolution equation with some uncertainties:
+\begin{itemize}
+\item incomplete modelization of the system
+\item incorrectness of the numerical model.
+\end{itemize}
+\item Some measurement with some uncertainty.
+\item[\textcolor{blue}{\ding{224}}] combine this to get good estimate on the ``true'' state of the system.
+\end{itemize}
+
+\end{slide}
+
+
+
+
+
+
+\begin{slide}{History}
+{\scriptsize
+\begin{itemize}
+\item[\textcolor{blue}{\ding{224}}] (1949) \textcolor{red}{Kolmogorov - Wiener}, spectral decomposition (under assumption of linear autonomous system)
+\item[\textcolor{blue}{\ding{224}}] (1960) \textcolor{red}{Kalman - Bucy}, sequential filtering for linear system.
+\item[\textcolor{blue}{\ding{224}}] (1994) \textcolor{red}{Evensen}, Ensemble Kalman filtering
+\end{itemize}
+}
+\end{slide}
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%% Slide presentation
+\begin{slide}{}
+\begin{center}
+{\Huge 
+\begin{tabular*}{6cm}{c}
+\\[-0.5cm]
+\textcolor{blue}{I. }\textcolor{red}{Original}\\
+\textcolor{red}{Kalman}\\
+\textcolor{red}{filtering}
+\end{tabular*}
+}
+\end{center}
+\end{slide}
+
+
+\begin{slide}{Gaussian variables}
+\begin{itemize}
+\item A random variable $X$ is Gaussian if its probability density is proportional to
+\begin{equation*}
+exp(-\frac{1}{2\sigma}(x-m)^2)
+\end{equation*}
+\item Gaussian random variable are characterized by
+\begin{equation*}
+E(X)=m\mbox{~~~and~~~}E(X^2)=\sigma+m^2
+\end{equation*}
+\item The Gaussian Random variable appearing in Oceanography are of course \textcolor{red}{multi-dimensional}. They are characterized by a \textcolor{red}{vector} and a \textcolor{red}{covariance matrix}.
+\end{itemize}
+
+\end{slide}
+
+
+
+
+
+\begin{slide}{Stochastic Differential equations}
+\begin{itemize}
+\item Stochastic differential equation:
+\begin{equation*}
+dX_t=F(t)X_t dt+C(t)dU_t
+\end{equation*}
+with $dU_t$ a ``white noise'', i.e. is a Brownian motion, Gaussian process.
+It is the \textcolor{red}{model equation}.
+\item Stochastic differential equation:
+\begin{equation*}
+dZ_t=G(t)X_t dt+ D(t)dV_t
+\end{equation*}
+with $dV_t$ another independent ``white noise''.
+It is the \textcolor{red}{measurement equation}.
+\end{itemize}
+At every given $t$, $X_t$, $Z_t$ will be Gaussian variables.
+\end{slide}
+
+
+
+
+
+\begin{slide}{Kalman solution}
+\begin{itemize}
+\item The stochastic equations are considered to be \textcolor{red}{Ito equations} (the alternatice is Stratonovich equations).
+\item Kalman-Bucy theory allows to compute
+\begin{itemize}
+\item the expectancy,
+\item covariance matrix 
+\end{itemize}
+\item But they are solution of a nonlinear Riccati ordinary differential equation.
+\end{itemize}
+\end{slide}
+
+
+
+\begin{slide}{Discrete version}
+\begin{itemize}
+\item Evolution equation:
+\begin{equation*}
+X^{t}(t_k)=A_k X^t(t_{k-1})+\eta(t_k)
+\end{equation*}
+with $\eta(t_k)$ being Gaussian of covariance matrix $Q(t_k)$
+\item Measurement equation
+\begin{equation*}
+Y_k^{0}=H_k X^t(t_k)+\epsilon_k
+\end{equation*}
+with $\epsilon_k$ being Gaussian of covariance matrix $R(t_k)$
+\end{itemize}
+All $X^t$ terms appearing are Gaussian.
+\end{slide}
+
+
+
+\begin{slide}{The Equations}
+
+
+\begin{itemize}
+\item {\bf Initialisation step}
+\begin{equation*}
+\begin{array}{rcl}
+X^a(t_0)&=&m_0\\
+P^a(t_0)&=&P_0
+\end{array}
+\end{equation*}
+\item {\bf Prevision step}
+\begin{equation*}
+\begin{array}{rcl}
+X^f(t_k)&=&A_k X^a(t_{k-1})\\
+P^f(t_k)&=&A_k P^a(t_{k-1})A_k^T+Q(t_k)
+\end{array}
+\end{equation*}
+\item {\bf Correcting step}
+\begin{equation*}
+\begin{array}{rcl}
+X^a(t_k)&=&X^f(t_k)+K_k\{Y_k^0-H_k X^f(t_k)\}\\
+P^a(t_k)&=&(I-K_kH_k)P^f(t_k)
+\end{array}
+\end{equation*}
+with $K_k=P^f(t_k) H_k^T\{H_kP^f(t_k)H_k^T+R_k\}^{-1}$.
+\end{itemize}
+\end{slide}
+
+
+\begin{slide}{Derivation of the equations}
+Denote $X^t$ and $Y^t$ the true state and observation of the system at instant $t_k$
+\begin{itemize}
+\item We want to minimize the expectancy 
+\begin{equation*}
+\begin{array}{rcl}
+&=&E[(X^a-X^t)(X^a-X^t)^{T}]\\
+&=&E[(X^f-X^t+K(Y^0-HX^f))(\dots)^T]\\
+&=&E[((I-KH)(X^f-X^t)+K(Y^0-Y^t))(\dots)^T]\\
+&=&(I-KH)E[(X^f-X^t)(X^f-X^t)^T](I-KH)^T\\
+&&+KE[(Y^0-Y^t)(Y^0-Y^t)^T]K^T\\
+&=&(I-KH)P^f(I-KH)^T+KRK^T
+\end{array}
+\end{equation*}
+\item Minimization is obtained by $K=P^f(t_k) H_k^T\{H_kP^f(t_k)H_k^T+R_k\}^{-1}$.
+
+\end{itemize}
+\end{slide}
+
+
+\begin{slide}{}
+\begin{center}
+{\Huge 
+\begin{tabular*}{8cm}{c}
+\\[-0.5cm]
+\textcolor{blue}{II. }\textcolor{red}{Extensions}\\
+\textcolor{red}{and}\\
+\textcolor{red}{restrictions}
+\end{tabular*}
+}
+\end{center}
+\end{slide}
+
+
+\begin{slide}{Extended Kalman filtering}
+\begin{itemize}
+\item Equations for \textcolor{red}{nonlinear} systems:
+\begin{equation*}
+\begin{array}{rcl}
+X^{t}(t_k)&=&F_k(X^t(t_{k_1}))+\eta(t_k)\\
+Y_k^{0}&=&H_k X^t(t_k)+\epsilon_k
+\end{array}
+\end{equation*}
+\item Kalman filtering applies only to \textcolor{red}{linear}\mbox{~} systems. 
+\item \textcolor{red}{nonlinear}$\Rightarrow$ \textcolor{red}{Gaussianity} no longer preserved.
+\item Extended Kalman filtering is a linearization of the equations.
+\item Consequences and results:
+\begin{itemize}
+\item We lose optimality of Kalman filtering
+\item It works relatively well for weakly nonlinear systems.
+\item It does not work well for strongly nonlinear systems.
+\end{itemize}
+
+
+\end{itemize}
+\end{slide}
+
+
+\begin{slide}{Issues for oceanography}
+\begin{itemize}
+\item In order to apply Extended Kalman filtering, one needs:
+\begin{itemize}
+\item the variance matrices of measurement.
+\item have an estimation of ``what we miss''
+\item have an estimation of the computer errors.
+\end{itemize}
+\item It is not possible to invert matrices of size $1.10^6\times 1.10^6$.
+\item[\ding{224}] Kalman filtering or Extended Kalman filtering \textcolor{red}{cannot}\\
+be applied in Oceanography.
+\end{itemize}
+\end{slide}
+
+
+
+\begin{slide}{The SEEK filter}
+\textcolor{blue}{SEEK}: Singular Evolutiv Extended Kalman Filter
+\begin{itemize}
+\item Idea is that the phase state has a variety called \textcolor{red}{attractor}.
+\begin{itemize}
+\item \textcolor{red}{normal} directions to the attractor are \textcolor{red}{dissipative}: errors are corrected themselves.
+\item \textcolor{red}{tangent} directions to the attractor are \textcolor{red}{hyperbolic}: errors are amplified.
+\end{itemize}
+\item \textcolor{blue}{SEEK}: we consider the error only in a chosen tangent space of dimension $r$.
+\item The computational cost is $(r+1)$ times the cost of the model.
+
+\end{itemize}
+\end{slide}
+
+
+
+
+
+\begin{slide}{The \textcolor{blue}{SEIK} filter}
+\textcolor{blue}{SEIK}: Singular Extended Interpolated Kalman Filter
+\begin{itemize}
+\item Take a cloud of $r+1$-points around the initial state and make them evolve.
+\item Compute the initial state and its covariance matrix by 
+\begin{equation*}
+P^a(t_{k})=\frac{1}{r+1}\sum_{i=1}^{r+1}[X_i^a(t_k)-X^a(t_k)][\dots]^T
+\end{equation*}
+\item cost is identical to the one of \textcolor{blue}{SEEK}, performance are superior; one possible reason: linearization implies a bigger error than doing averaging.
+\end{itemize}
+\end{slide}
+
+
+\begin{slide}{The subspace in \textcolor{blue}{SEIK} and \textcolor{blue}{SEEK}}
+\begin{itemize}
+\item In order to make those filters run, one needs to select a basis.
+\item Hoteit uses
+\begin{itemize}
+\item Empirical Orthogonal Functions.
+\item Localized EOF around areas of interest.
+\end{itemize}
+\item Empirical orthogonal functions consist of having $N$ states and selecting an orthogonal basis of $r$ states ($r< N$) that encapsulates the main trends.
+\item localized EOF consist of selecting some areas, and localizing the functions on those areas, then doing classical EOF.
+\item ``mixed'' basis consist of localized EOF + some global EOF. In \textcolor{blue}{SESEEK} he makes evolve only the global EOF.
+
+\end{itemize}
+\end{slide}
+
+
+
+\begin{slide}{Computationnal issues}
+\begin{itemize}
+\item \textcolor{blue}{SEEK} and \textcolor{blue}{SEIK} are possible to use in Oceanography
+\item their cost remain high.
+\item Further ideas are needed...
+\end{itemize}
+\end{slide}
+
+
+
+\begin{slide}{\textcolor{blue}{SFEK} and \textcolor{blue}{SAEK} filters}
+\begin{itemize}
+\item If we fix the basis of the space in which computations are done at the beginning, we obtain the \textcolor{blue}{SFEK} filter.
+\item In \textcolor{red}{linear autonomous} case, the matrix $P^a$ converges to a fixed matrix.\\
+\textcolor{blue}{\ding{224}} The idea is to fix the subspace considered, \textcolor{blue}{SAEK}.
+\item Hoteit indicates some poor behaviour, due to the fact that Ocean is nonlinear.
+\end{itemize}
+\end{slide}
+
+
+
+
+
+\begin{slide}{SIEIK}
+Singular Intermittemt Extended Interpolated Kalman Filter
+\begin{itemize}
+\item \textcolor{blue}{SFEK} and \textcolor{blue}{SAEK} are problematic, since the base is evolving.
+\item[\textcolor{blue}{\ding{224}}] The idea is to make the base evolves by intermittence:
+\begin{itemize}
+\item if the model stays calm, we keep the same basis,
+\item if some significant modification happen, we update the basis.
+\end{itemize}
+\item It makes a faster filter and it works almost as good as \textcolor{blue}{SEEK}.
+\end{itemize}
+\end{slide}
+
+
+
+
+
+
+
+
+
+
+
+\begin{slide}{}
+\begin{center}
+{\Huge 
+\begin{tabular*}{8cm}{c}
+\\[-0.5cm]
+\textcolor{blue}{III. }\textcolor{red}{Ensemble}\\
+\textcolor{red}{Kalman}\\
+\textcolor{red}{filtering}
+\end{tabular*}
+}
+\end{center}
+\end{slide}
+
+
+
+
+
+
+\begin{slide}{The idea}
+\begin{itemize}
+\item The idea is to replace the formalism of average and covariance matrix by a population of states ($O(100)$ states in Evensen experiments)
+
+\item[\textcolor{blue}{\ding{224}}] the system can handle nonlinear situations better.
+
+\item Its cost is similar to the one of \textcolor{blue}{SEEK}, \textcolor{blue}{SEIK}.
+
+\item The overall idea is to do Markov Chain Monte Carlo simulation to make evolve the net of points.
+
+\end{itemize}
+\end{slide}
+
+
+
+
+
+
+
+\begin{slide}{The error terms }
+\begin{itemize}
+\item The uncertainty on measurement is handled by the ensemble.
+\item What about the uncertainty of the model? It is still assumed to
+be a linear white noise of the form
+\begin{equation*}
+\psi_k=f(\psi_{k-1})+q_k
+\end{equation*}
+\item Despite this the \textcolor{blue}{EnKF} performs very well and manages to work even on Lorenz model.
+
+\end{itemize}
+\end{slide}
+
+
+
+
+
+
+
+
+
+\begin{slide}{}
+\begin{center}
+{\Huge 
+\begin{tabular*}{4cm}{c}
+\\[-0.5cm]
+\textcolor{red}{Thank}\\
+\textcolor{red}{You}
+\end{tabular*}
+}
+\end{center}
+\end{slide}
+
+
+\end{document}
