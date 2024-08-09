@@ -1,0 +1,133 @@
+\documentclass{beamer}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{pifont}
+\setbeamertemplate{navigation symbols}{}
+\newcommand{\RR}{\ensuremath{\mathbb{R}}}
+\newcommand{\NN}{\ensuremath{\mathbb{N}}}
+\newcommand{\QQ}{\ensuremath{\mathbb{Q}}}
+\newcommand{\CC}{\ensuremath{\mathbb{C}}}
+\newcommand{\ZZ}{\ensuremath{\mathbb{Z}}}
+\newcommand{\TT}{\ensuremath{\mathbb{T}}}
+\newcommand{\HH}{\ensuremath{\mathbb{H}}}
+\DeclareMathOperator{\Min}{Min}
+\DeclareMathOperator{\mint}{min}
+\DeclareMathOperator{\vertt}{vert}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\rank}{rank}
+
+\def\QuotS#1#2{\leavevmode\kern-.0em\raise.2ex\hbox{$#1$}\kern-.1em/\kern-.1em\lower.25ex\hbox{$#2$}}
+
+\begin{document}
+\title{Wave models}
+\author{
+\begin{center}
+\textcolor{red}{\large Mathieu Dutour Sikiri\'c}\\[2mm]
+\textcolor{red}{Rudjer Bo\u skovi\'c Institute, Croatia}\\[2mm]
+\end{center}
+}
+
+\date{\today} 
+\frame{\titlepage} 
+
+\frame{
+  \frametitle{Wave models available}
+\begin{itemize}
+\item {\bf SWAN}: Available as GPL, coupled with ROMS and other models.
+\item {\bf WaveWatch III}: From NOAA and IFREMER. It has a large arrays of possibilities, but is more complex to use
+\item {\bf WAM}: Developped at ECMWF. 
+\item {\bf WWM}: The Wind Wave Model developped by Aron Roland and Mathieu Dutour Sikiri\'c.
+\end{itemize}
+All models support unstructured meshes. Only WWM has no structured grids.
+}
+
+
+\frame{
+  \frametitle{The WWM model}
+The Wind Wave Model is a third generation wave model authored by Aron Roland and which shares many
+common features with WaveWatch III.
+\begin{itemize}
+\item The Wind Wave Model (WWM) is a unstructured grid spectral wave model.
+\item It incorporates most existing source term formulation for wind input and dissipation (Cycle III,
+Cycle IV, Ardhuin, Makin, ...)
+\item It has been coupled to SELFE, SHYFEM, TIMOR and ROMS.
+\item It uses Residual Distribution schemes for the horizontal advection.
+\item It integrates the WAE by using the Operator Splitting Method in explicit or implicit mode.
+\item It has NETCDF output/input/hotfile.
+\item Parallelization is done by ParMETIS.
+\end{itemize}
+}
+
+\frame{
+  \frametitle{Model coupling, physics}
+
+\begin{itemize}
+\item The coupling can be done {\bf Wave} - {\bf Atmosphere}:
+\begin{itemize}
+\item The atmosphere sends wind speed, air density, stability terms to the wave model
+\item The wave model sends Charnock coefficient to the Atmosphere for the computation of the surface stress.
+\end{itemize}
+\item The coupling can be done {\bf Wave} - {\bf Ocean}:
+\begin{itemize}
+\item Currents and surface are send to the wave model
+\item Wave dissipation can be used for parameterization of turbulence.
+\item radiation stress enter into the primitive equations (Ardhuin formulation, etc.)
+\item wave parameters can be used for sediment formulations.
+\end{itemize}
+\item The coupling can be done {\bf Atmosphere} - {\bf Ocean}:
+\begin{itemize}
+\item The ocean model receives wind, air temperature, humidity from the atmosphere.
+\item The atmospheric model receives the sea surface temperature.
+\end{itemize}
+
+
+\end{itemize}
+}
+
+
+
+\frame{
+  \frametitle{Model coupling library, computer science}
+\begin{itemize}
+\item The exchange between coupled models (via {\tt COMM\_SPLIT}) requires the sending of data between them.
+\item A priori the grids are different, the model nature may be different (Structure/Unstructured grids)
+and so interpolation is needed between the models.
+\item There are several existing libraries {\tt MCT}, {\tt OASIS}, {\tt PALM}, etc but when considering
+them, they appear all relatively complicated.
+\item We designed our own simple library for coupling {\tt PGMCL} (Parallel Geophysical Model Coupling Library)
+\item After declarations, the commands become as simple as
+\begin{center}
+{\tt CALL MPI\_INTERP\_SEND(TheArr\_WAVtoOCN, Hwave)}\\
+{\tt CALL MPI\_INTERP\_RECV(TheArr\_WAVtoOCN, Hwave)}
+\end{center}
+\item We coupled {\bf COSMO}, {\bf WAM}, {\bf ROMS} and {\bf WWM} together 
+\end{itemize}
+}
+
+\frame{
+  \frametitle{Data comparison}
+\begin{itemize}
+\item Right now no wave model has data assimilation implemented in it.
+\item Classical assimilation methods such as Kalman filter and 4DVAR depends on linearization assumptions,
+which are not valid there.
+\item Instead, primary tool is to compare model results with measurement or satellite estimate.
+\item {\bf Altimeter estimates} of significant wave height can be used.
+\item {\bf Buoys measurements} can be used. Variables:
+\begin{itemize}
+\item Significant wave height.
+\item wave periods
+\item other turbulence parameters.
+\end{itemize}
+
+\end{itemize}
+}
+
+
+
+
+
+
+
+
+\end{document}
