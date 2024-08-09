@@ -1,0 +1,277 @@
+\documentclass{beamer}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{pifont}
+\setbeamertemplate{navigation symbols}{}
+\newcommand{\RR}{\ensuremath{\mathbb{R}}}
+\newcommand{\NN}{\ensuremath{\mathbb{N}}}
+\newcommand{\QQ}{\ensuremath{\mathbb{Q}}}
+\newcommand{\CC}{\ensuremath{\mathbb{C}}}
+\newcommand{\ZZ}{\ensuremath{\mathbb{Z}}}
+\newcommand{\TT}{\ensuremath{\mathbb{T}}}
+\newcommand{\HH}{\ensuremath{\mathbb{H}}}
+\usepackage[version=4]{mhchem}
+\DeclareMathOperator{\Min}{Min}
+\DeclareMathOperator{\mint}{min}
+\DeclareMathOperator{\vertt}{vert}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\rank}{rank}
+
+\def\QuotS#1#2{\leavevmode\kern-.0em\raise.2ex\hbox{$#1$}\kern-.1em/\kern-.1em\lower.25ex\hbox{$#2$}}
+
+\begin{document}
+
+
+\title{Modelling of Rogoznica lake: Physics and Biology}
+
+
+\author{
+\textcolor{red}{\large Mathieu Dutour Sikiri\'c}\\[2mm]
+\textcolor{black}{Institute Rudjer Bo\u skovi\'c}\\
+}
+
+\date{\today}
+\frame{\titlepage}
+
+
+\frame{
+  \frametitle{Statement of the problem}
+
+\begin{itemize}
+\item Rogoznica lake is a lake that is either in one of two states:
+\begin{itemize}
+\item In a straitified state with an Oxic layer in the upper part, a chemocline lower and then a lower anoxic layer.
+\item An unstratified state where the whole column is anoxic.
+\end{itemize}
+\item The following aspects are important to the modelization
+\begin{itemize}
+\item The concentrations in temperature/salinity are varying in time and govern the strength of the stratification.
+\item The sulfur chemistry in the lake is complex with $SO_4^{2-}$, $S^{2-}$ and $S^0$ being the most significant part.
+\item The primary production of matter is by the phytoplankton and the organic matter is decomposed by heterotrophic bacteria.
+\end{itemize}
+
+
+\end{itemize}
+}
+
+
+\frame{
+\begin{center}
+\begin{tabular*}{6cm}{c}
+\\[-0.5cm]
+{\Huge \textcolor{blue}{I. }\textcolor{red}{Physical}}\\
+{\Huge \textcolor{red}{description}}
+\end{tabular*}
+\end{center}
+}
+
+
+
+\frame{
+  \frametitle{Fundamental simplying assumption}
+
+\begin{itemize}
+\item We choose to assume that the physics determine the biology and that the physics is determined very little by biology
+\item The immediate consequence is that we can separate the modelling into two stages:
+\begin{itemize}
+\item Modeling the physical parameters of the lake.
+\item Modeling of the chemistry and biology separately.
+\end{itemize}
+This is a very common approach. For example one commonly run atmospheric model and then feed the obtained wind, temperature and other fields to the oceanographic model.
+\item Where the assumption could be wrong is that biological activity could change where light is absorbed which would then affect temperature.
+\end{itemize}
+}
+
+
+
+
+
+
+\frame{
+  \frametitle{Air sea exchanges}
+\begin{itemize}
+\item The following gases are exchanged at the surface:
+\begin{itemize}
+\item Oxygen $O_2$ which is consumed by respiration and created by phytoplankton
+\item Carbon dioxide $CO_2$ which is consumed by phytoplankton and created by respiration.
+\item hydrogen sulfide $H_2S$ which is created by the heterotrophic bacteria and consumed by the photopic bacteria and dissolved by oxygen
+\end{itemize}
+\item Henry's law specifies the concentration of a gas at the surface in terms of the partial pressure of the gas at the surface. In practice:
+\begin{itemize}
+\item Oxygen and carbon dioxide concentration are fixed by the concentrations in the atmospheric pressure.
+\item Hydrogen sulfide that reach the surface go to the atmosphere.
+\end{itemize}
+More sophisticated parametrization of this equilibrium exist.
+\item Some parameterization of the dynamic evolution in time uses the wind speed.
+\end{itemize}
+}
+
+
+
+\frame{
+  \frametitle{Limnic eruptions}
+
+\begin{itemize}
+\item Limnic eruptions occur when the concentration in gas reaches too high a concentration to remain dissolved and bubbles form
+\item When the bubbles form, they go upward where the pressure is lower and so more gas gets released which causes an acceleration.
+\item When this occurs in some lakes in Africa it can reach heights of $80$ meters which then releases the gas in the atmosphere.
+\item There is no such risk in Rogoznica lake.
+\end{itemize}
+}
+
+
+
+\frame{
+  \frametitle{Physical modelization and Diffusion in the lake}
+
+\begin{itemize}
+\item A predominant problem that we have to resolve is the diffusion of the chemicals in the lake.
+\item Currents and water level variations contribute to the turbulent kinetic energy of the lake but their magnitude is relatively small.
+\item The diffusion coefficient is parameterized via the strength of the parameterization:
+\begin{equation*}
+K_z = K_{z, back} (1 + N_2^2)^{-2} \mbox{ with } N_2 = \frac{d\rho}{dz} \frac{g}{\rho}
+\end{equation*}
+\item This means that when the water column is uniform, the diffusion coefficient is very high but that when the density stratification
+  is very strong with respect to the density then the diffusion coefficient is low.
+\item This implies that the oxic and anoxic part of the lake became areas with relatively uniform concentrations but that the stratification
+  separates the two zones.
+\end{itemize}
+}
+
+
+
+
+
+\frame{
+\begin{center}
+\begin{tabular*}{6cm}{c}
+\\[-0.5cm]
+{\Huge \textcolor{blue}{II. }\textcolor{red}{Chemical and}}\\
+{\Huge \textcolor{red}{biological aspects}}
+\end{tabular*}
+\end{center}
+}
+
+
+
+\frame{
+  \frametitle{$pH$ parameterization}
+
+\begin{itemize}
+\item The $pH$ is affected by a lot of substrate in the lake.
+\item How important is the $pH$?
+\begin{itemize}
+\item The chemical reactions mediated by the bacteria are changing the $pH$
+\item The $pH$ affects the reaction and their speed.
+\end{itemize}
+\item But the $pH$ is influenced by many processes in the lake which makes its modelization difficult.
+\item On the other hand, measurement of the $pH$ in the lake shows that the variability is not very large.
+\item Thus we choose to set the $pH$ to a constant value of $7$.
+\end{itemize}
+}
+
+
+
+
+\frame{
+  \frametitle{The sulfur cycle in the lake}
+\begin{itemize}
+\item The sulfate $SO_4^{2-}$ is processed by heterotrophic bacteria by
+\begin{center}
+\ce{2 H^{+} + SO_4^{2-} + \{ CH_2O \}  -> H2S + 2CO2 + 2H2O}
+\end{center}
+\item The hydrogen sulfide $H_2S$ is a poison to the bacteria including the heterotropic bacteria.
+\item What is the fate of the $H_2S$ in the lake:
+\begin{itemize}
+\item Some can be processed by the phototropic bacteria according to
+\begin{center}
+\ce{2 H2S + CO2 -> \{ CH_2O \}  + 2S + H2O}
+\end{center}
+\item The elementary sulfur can react to form polysulfides
+\item Some can be disproportionated by the reaction
+\begin{center}
+\ce{4 S + 4 H2O -> 3 H2S + SO_4^{2-} + 2H+}
+\end{center}
+\item But eventually some of the hydrogen sulfide had to seep into the upper layer and react with the oxygen to transform into sulfate.
+
+
+
+\end{itemize}
+\end{itemize}
+}
+
+
+
+
+\frame{
+  \frametitle{Phytoplankton}
+
+\begin{itemize}
+\item Living organisms are very complex and in order to model them we have to make big modelling choice:
+\begin{itemize}
+\item Only one single specie is considered.
+\item Organic matter itself is just encoded by the single symbol $\{ CH_2O \}$.
+\item Dependency upon nutrients concentration $[C]$ is simply expressed as $[C] / (K + [C])$
+\item There is also a dependency on the light.
+\item Some terms account for the overpopulation.
+\item The death rate is taken constant.
+\end{itemize}
+\item The modelization is thus expressed as
+\begin{equation*}
+\frac{dB}{dt} = \gamma_{max} f_{light} f_{pop} f_{nutrient} B - c_{death} B
+\end{equation*}
+
+
+
+\end{itemize}
+}
+
+
+
+
+
+
+
+\frame{
+  \frametitle{Heterotrophic / Phototropic / Disproportionating bacteria}
+
+\begin{itemize}
+\item {\bf Heterotrophic bacteria} live off the organic matter (DOC/POC) that falls into the bottom of the lake when dying.
+\item The modelization depends on:
+\begin{itemize}
+\item The concentration of POC/DOC.
+\item The concentration in $H_2S$ which is toxic to the bacteria
+\end{itemize}
+\item The modelization is thus expressed as
+\begin{equation*}
+\frac{dH}{dt} = \gamma_{max} f_{H_2S} H - c_{death} H
+\end{equation*}
+\item {\bf Phototropic bacteria} uses photosynthesis to make elementary sulfur out of $H_2S$. Their modelization depends on
+\begin{itemize}
+\item The concentration of $H_2S$
+\item The light available.
+\end{itemize}
+\item {\bf Disproportionating bacteria} uses elementary sulfur to create $SO_4^{2-}$ and $H_2S$. The reaction is very slow in nature and bacteria eked out a living out of it. Their parametrizing is very difficult.
+
+
+
+\end{itemize}
+}
+
+
+
+
+\frame{
+  \frametitle{Summary}
+\begin{itemize}
+\item Hydrogen sulfide $H_2S$ seeps into the oxic part and is converted to $SO_4^{2-}$. The absence of hydrogen sulfide is not the absence of hydrogen sulfide arriving there.
+\item The concentration in nutrients is higher in the bottom of the lake because that is where the POC/DOC falls.
+\item The concentration in phytoplankton is high nearer the chemocline because this is where the nutrients are.
+\end{itemize}
+}
+
+
+
+
+\end{document}
