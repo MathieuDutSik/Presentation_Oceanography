@@ -1,0 +1,4 @@
+Treating variable TM02
+     i=1 ROMS+WWM coupl ME=-1.66 AE=1.79 RMSE=2.02 corr=0.60
+     Mean 1=4.04 2=2.38
+--------------------------------------------------

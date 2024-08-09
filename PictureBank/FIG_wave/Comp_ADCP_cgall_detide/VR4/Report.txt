@@ -1,0 +1,14 @@
+
+         name=VR4
+Treating variable zeta
+--------------------------------------------------
+Treating variable uv_surf_mag_detide
+     i=1 SER ivD run cg     AE=0.09 RMSE=0.10 ME=-0.03 corr=-0.04
+     Mean 1=0.12 2=0.15
+     i=2 SER ivD run3 cg    AE=0.08 RMSE=0.10 ME=-0.02 corr=-0.08
+     Mean 1=0.12 2=0.14
+     i=3 SER ivD run4 bbeta AE=0.08 RMSE=0.10 ME=-0.02 corr=-0.09
+     Mean 1=0.12 2=0.14
+     i=4 SER ivD run5 bbeta AE=0.08 RMSE=0.10 ME=-0.02 corr=-0.09
+     Mean 1=0.12 2=0.14
+--------------------------------------------------

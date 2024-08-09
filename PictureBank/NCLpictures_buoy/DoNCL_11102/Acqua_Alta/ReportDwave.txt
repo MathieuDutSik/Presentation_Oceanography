@@ -1,0 +1,3 @@
+Treating variable Dwave
+     i=1 Acqua_Alta ME=-3.40 AE=34.96 RMSE=54.40
+--------------------------------------------------

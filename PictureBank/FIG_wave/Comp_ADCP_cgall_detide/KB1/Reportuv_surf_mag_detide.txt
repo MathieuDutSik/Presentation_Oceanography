@@ -1,0 +1,10 @@
+Treating variable uv_surf_mag_detide
+     i=1 SER ivD run cg     AE=0.26 RMSE=0.29 ME=-0.24 corr=-0.03
+     Mean 1=0.20 2=0.44
+     i=2 SER ivD run3 cg    AE=0.20 RMSE=0.23 ME=-0.18 corr=-0.06
+     Mean 1=0.20 2=0.38
+     i=3 SER ivD run4 bbeta AE=0.19 RMSE=0.22 ME=-0.17 corr=-0.07
+     Mean 1=0.20 2=0.37
+     i=4 SER ivD run5 bbeta AE=0.19 RMSE=0.22 ME=-0.17 corr=-0.06
+     Mean 1=0.20 2=0.37
+--------------------------------------------------

@@ -1,0 +1,10 @@
+Treating variable uv_surf_mag_detide
+     i=1 Experiment 1 AE=0.08 RMSE=0.10 ME=0.01 corr=0.45
+     Mean 1=0.33 2=0.32
+     i=2 Experiment 3 AE=0.07 RMSE=0.09 ME=0.01 corr=0.46
+     Mean 1=0.33 2=0.32
+     i=3 Experiment 4 AE=0.06 RMSE=0.08 ME=0.02 corr=0.40
+     Mean 1=0.33 2=0.31
+     i=4 Experiment 5 AE=0.06 RMSE=0.08 ME=0.02 corr=0.44
+     Mean 1=0.33 2=0.31
+--------------------------------------------------
